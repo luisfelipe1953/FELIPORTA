@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #191825;
+}
+
+html, img {
+  font-family: "Josefin Sans", sans-serif;
+   scroll-behavior: smooth;
+  cursor: url("/img/cursor.svg"), auto;
+}
+
+a,
+button,
+submit {
+  cursor: url("/img/mano.png"), auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container-md {
+  width: min(80%, 800px);
+}
