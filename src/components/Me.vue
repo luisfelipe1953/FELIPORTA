@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div id="me" class="sm:container container-md mx-auto mt-72">
+  <div id="me" class="sm:container container-md mx-auto mt-64">
     <div class="ml-10 sm:ml-0  text-white sm:text-center">
       <h1 class="font-bold text-center text-3xl my-10">Sobre Mi / About Me</h1>
       <p>

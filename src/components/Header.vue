@@ -13,11 +13,11 @@ conponets: {
 
 <template class="">
   <div>
-    <img class="absolute w-full sm:h-[1000px] h-[1200px] object-cover bg-gradient -z-30" src="img/header1.jpg" />
+    <img class="absolute w-full sm:h-[1000px] h-[1200px] object-cover bg-gradient -z-30" src="../assets/header1.jpg" />
     <div class="bg-gradient-to-r from-grayDark sm:min-h-[1000px] m-h-[1200px] absolute top-0 left-0 w-full -z-20"></div>
 
-    <div class="z-20 absolute sm:top-1/3 top-1/2 sm:left-1/2 left-72 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden text-white text-4xl sm:text-6xl font-bold ">
-      <div class="contenedor font-bold overflow-hidden sm:h-14 h-10 px-10 relative">
+    <div class="z-20 absolute sm:top-1/3 top-1/3 sm:left-1/2 left-72 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden text-white text-4xl sm:text-6xl font-bold ">
+      <div class="contenedor font-bold overflow-hidden sm:h-14 h-10 sm:px-10 relative">
         <p class="inline-block float-left">Welcome</p>
         <ul class="list sm:ml-80 ml-48 text-left">
           <li class="item">world !</li>
@@ -37,12 +37,13 @@ conponets: {
 .contenedor:before {
   content: "[";
   left: 0;
+  @apply hidden sm:absolute
 }
 
 .contenedor:after {
   content: "]";
-  position: absolute;
   right: 0;
+  @apply hidden sm:absolute
 }
 
 .contenedor:after,

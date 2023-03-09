@@ -15,7 +15,7 @@ import proyectsItems from "./proyectsItems";
         <p class="m-10">
           {{ proyectsItem.text }}
         </p>
-        <a class="p-10" href="#">
+        <a class="p-10" :href="proyectsItem.url">
           <font-awesome-icon
             class="absolute top-3/4 left-36 transition-transform hover:scale-110 ease-in-out"
             icon="fa-brands fa-github"

@@ -2,9 +2,6 @@ export default {
   profile: {
     name: "Me",
     image: "me.png",
-    onclick() {
-      scroll()
-    },
   },
   items: [
     {
