@@ -12,19 +12,19 @@ export default {
      
     },
     {
-      id: "0",
+      id: "1",
       title: "Habilidades",
       icon: "fa-star",
       SectionScroll: "skills"
     },
     {
-      id: "0",
+      id: "2",
       title: "Proyectos",
       icon: "bars-progress",
       SectionScroll: "proyects"
     },
     {
-      id: "0",
+      id: "3",
       title: "Contactame",
       icon: "fa-link",
       SectionScroll: "contact"
