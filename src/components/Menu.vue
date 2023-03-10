@@ -37,28 +37,6 @@ const collapsed = ref(false);
         </ul>
       </div>
     </div>
-    <!-- <div class="bg-grayDark p-8 text-white flex justify-between">
-      <div>
-        <a class="p-10 hover:bg-purple" href="#inicioDelProyecto">WELIPORT</a>
-      </div>
-      <div class="mr-10">
-        <a
-          class="p-10 hover:bg-purple"
-          v-for="(array, link) in objectNav"
-          v-bind:key="link"
-          :href="'#' + link"
-          :id="link"
-          @click="scroll(link)"
-          >{{ array }}</a
-        >
-      </div>
-      <button @click="mas()">mas</button>
-      <button @click="menos()">menos</button>
-      <button @click="reset()">reset</button>
-      <button :disabled="bloquearBtnAdd" @click="add(contador)">add</button>
-      <h1 :class="bg">{{ contador }}</h1>
-      <h1>{{ array }}</h1> -->
-    <!-- </div> -->
   </div>
 </template>
 
