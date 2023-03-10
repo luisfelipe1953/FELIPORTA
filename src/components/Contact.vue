@@ -7,17 +7,17 @@
     <div class="mb-60">
       <ul class="flex justify-center gap-10 sm:mt-[1600px] mt-[3200px]">
         <li >
-          <a class="redondo" href="#">
+          <a class="redondo" target="_blank" href="https://github.com/luisfelipe1953">
             <font-awesome-icon icon="fa-brands fa-github" size="4x" />
           </a>
         </li>
         <li >
-          <a class="caudrado" href="#">
+          <a class="caudrado" target="_blank" href="https://www.linkedin.com/in/luis-felipe-fern%C3%A1ndez-betancur-474639267/">
             <font-awesome-icon icon="fa-brands fa-linkedin" size="4x" />
           </a>
         </li>
         <li >
-          <a class="rectangulo" href="#">
+          <a class="rectangulo" target="_blank" href="https://mail.google.com/mail/?view=cm&to=luisfelipefernandezbetancur@gmail.com">
             <font-awesome-icon icon="fa-solid fa-envelope" size="4x" />
           </a>
         </li>

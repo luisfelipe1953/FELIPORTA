@@ -5,12 +5,6 @@ import MenuItem from "./MenuItem.vue";
 
 const collapsed = ref(false);
 
-
-const scroll = (e) => {
-  console.log(e)
-  const evento = document.getElementById(e);
- evento.scrollIntoView({ behavior: "smooth" });
- };
 </script>
 
 <template class="">
@@ -18,7 +12,7 @@ const scroll = (e) => {
     <div :class="['menu', collapsed ? 'collapsed' : 'expanded']">
       <div class="flex justify-end">
         <button class="p-3 mr-3" @click="collapsed = !collapsed">
-          <font-awesome-icon icon="fa-solid fa-bars" size="2x"/>
+          <font-awesome-icon icon="fa-solid fa-bars" size="2x" />
         </button>
       </div>
 
@@ -28,7 +22,9 @@ const scroll = (e) => {
           :src="'img/' + menuItems.profile.image"
           alt=""
         />
-        <div class="px-0 py-3 text-2xl" v-if="!collapsed">{{ menuItems.profile.name }}</div>
+        <div class="px-0 py-3 text-2xl" v-if="!collapsed">
+          {{ menuItems.profile.name }}
+        </div>
       </div>
       <div>
         <ul>
@@ -37,7 +33,6 @@ const scroll = (e) => {
             :key="MenuItem.id"
             :item="MenuItem"
             :collapsed="collapsed"
-            :id="SectionScroll"
           />
         </ul>
       </div>
