@@ -4,9 +4,15 @@ import menuItems from "./menuItems.js";
 import MenuItem from "./MenuItem.vue";
 
 const collapsed = ref(false);
+
+components: {
+  MenuItem,
+  menuItems
+}
+
 </script>
 
-<template class="">
+<template>
   <div>
     <div :class="['menu', collapsed ? 'collapsed' : 'expanded']">
       <div class="flex justify-end">
@@ -30,8 +36,7 @@ const collapsed = ref(false);
           v-for="MenuItem in menuItems.items"
           :key="MenuItem.id"
           :item="MenuItem"
-          :collapsed="collapsed"
-        />
+          :collapsed="collapsed" />
       </div>
     </div>
   </div>

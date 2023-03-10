@@ -1,14 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import Menu from "./Menu.vue";
 
-conponets: {
-  Menu;
-}
-
-// defineProps({
-//   msg: String,
-// });
 </script>
 
 <template class="">
@@ -27,9 +19,6 @@ conponets: {
         </ul>
       </div>
     </div>
-
-   
-    <Menu />
   </div>
 </template>
 

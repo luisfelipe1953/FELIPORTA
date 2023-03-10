@@ -1,5 +1,6 @@
 <script setup>
 const props = defineProps(["item", "collapsed"]);
+
 </script>
 
 <template>
@@ -29,8 +30,7 @@ const props = defineProps(["item", "collapsed"]);
 }
 
 .animation::before {
-  content: " ";
-  @apply absolute inset-0 bg-purple -z-10 transition-transform duration-300 ease-out;
+  @apply content-[''] absolute inset-0 bg-purple -z-10 transition-transform duration-300 ease-out;
 }
 </style>
 
