@@ -3,6 +3,7 @@ import { ref } from "vue";
 import menuItems from "./menuItems.js";
 import MenuItem from "./MenuItem.vue";
 
+
 const collapsed = ref(false);
 
 components: {
@@ -33,9 +34,9 @@ components: {
       </div>
       <div>
         <MenuItem
-          v-for="MenuItem in menuItems.items"
-          :key="MenuItem.id"
-          :item="MenuItem"
+          v-for="Menu in menuItems.items"
+          :key="Menu.id"
+          :item="Menu"
           :collapsed="collapsed" />
       </div>
     </div>
