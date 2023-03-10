@@ -1,10 +1,9 @@
 <script setup>
 import { ref } from "vue";
-import menuItems from "./menuItems";
+import menuItems from "./menuItems.js";
 import MenuItem from "./MenuItem.vue";
 
 const collapsed = ref(false);
-
 </script>
 
 <template class="">
@@ -27,14 +26,12 @@ const collapsed = ref(false);
         </div>
       </div>
       <div>
-        <ul>
-          <MenuItem
-            v-for="MenuItem in menuItems.items"
-            :key="MenuItem.id"
-            :item="MenuItem"
-            :collapsed="collapsed"
-          />
-        </ul>
+        <MenuItem
+          v-for="MenuItem in menuItems.items"
+          :key="MenuItem.id"
+          :item="MenuItem"
+          :collapsed="collapsed"
+        />
       </div>
     </div>
   </div>
