@@ -4,8 +4,8 @@
 <template>
   <div class="bg-hueso sm:h-[700px] h-[1200px] sm:mt-40 mt-12 sm:pt-40 pt-60">
     <div id="skills" class="container-md mx-auto ">
-      <h1 class="font-bold text-center text-3xl ">Hablidades / Skills</h1>
-      <div class="grid sm:grid-cols-4 grid-cols-2 gap-8 justify-items-center mt-20">
+      <h1 class="font-bold text-center sm:ml-0 ml-10 sm:text-3xl text-2xl">Hablidades / Skills</h1>
+      <div class="grid sm:grid-cols-4 grid-cols-2 gap-8 justify-items-center sm:ml-0 ml-10 mt-20">
         <img src="../assets/img/html.png" alt="html" />
         <img src="../assets/img/css.png" alt="css" />
         <img src="../assets/img/js.png" alt="js" />

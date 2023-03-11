@@ -3,9 +3,9 @@
 
 <template>
   <div id="contact">
-    <h1 class="font-bold text-center text-white text-3xl mt-40">Contacto / Contact</h1>
+    <h1 class="font-bold text-center text-white sm:text-3xl text-2xl mt-40">Contacto / Contact</h1>
     <div class="mb-60">
-      <ul class="flex justify-center gap-10 sm:mt-[1600px] mt-[3200px]">
+      <ul class="flex justify-center sm:gap-10 gap-3 sm:mt-[1600px] mt-[200rem]">
         <li >
           <a class="redondo" target="_blank" href="https://github.com/luisfelipe1953">
             <font-awesome-icon icon="fa-brands fa-github" size="4x" />

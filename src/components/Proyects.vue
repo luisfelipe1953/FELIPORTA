@@ -4,20 +4,20 @@ import proyectsItems from "./proyectsItems";
 
 <template>
   <div id="proyects">
-    <h1 class="font-bold text-white text-center text-3xl mt-40">Proyectos / proyects</h1>
+    <h1 class="font-bold text-white text-center sm:text-3xl text-2xl mt-40">Proyectos / proyects</h1>
     <div class="sm:container container-md mx-auto grid sm:grid-cols-3 grid-cols-1 gap-5 mt-20">
       <div
-        class="shadow-hover ml-10 sm:m-0 mt-10 justify-self-center"
+        class="shadow-hover ml-12 sm:m-0 mt-10 justify-self-center"
         v-for="proyectsItem in proyectsItems.proyects"
         :key="proyectsItem.id"
       >
-        <h1 class="m-10">{{ proyectsItem.title }}</h1>
-        <p class="m-10">
+        <h1 class="m-10  sm:text-base  text-[10px]">{{ proyectsItem.title }}</h1>
+        <p class="m-10 sm:text-base text-[10px]">
           {{ proyectsItem.text }}
         </p>
         <a class="p-10" target="_blank" :href="proyectsItem.url">
           <font-awesome-icon
-            class="absolute top-3/4 left-36 transition-transform hover:scale-110 ease-in-out"
+            class="absolute top-3/4 sm:left-36 left-[105px] transition-transform hover:scale-110 ease-in-out"
             icon="fa-brands fa-github"
             size="3x"
           />
@@ -29,7 +29,7 @@ import proyectsItems from "./proyectsItems";
 
 <style scoped>
 .shadow-hover {
-  @apply relative w-[350px] h-[350px] bg-grayDark text-white transition-[box-shadow] duration-100 rounded-[75px];
+  @apply relative sm:w-[350px] min-w-[250px] sm:h-[350px] min-h-[250px] bg-grayDark text-white transition-[box-shadow] duration-100 rounded-[75px];
 }
 
 .shadow-hover:hover {
@@ -39,7 +39,7 @@ import proyectsItems from "./proyectsItems";
 .shadow-hover:hover::before,
 .shadow-hover:hover::after {
   animation: 1s clockwise infinite;
-  @apply block content-[''] absolute w-[350px] h-[350px] bg-purple rounded-[75px] -z-10;
+  @apply block content-[''] absolute sm:w-[350px] min-w-[250px] sm:h-[350px] min-h-[250px] bg-purple rounded-[75px] -z-10;
 }
 
 .shadow-hover:hover:after {

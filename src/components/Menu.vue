@@ -45,7 +45,7 @@ components: {
 
 <style scoped>
 .menu {
-  @apply bg-grayDark text-white h-[100vh] transition-[width] ease-in-out duration-300 fixed top-0 left-0 z-20;
+  @apply bg-grayDark text-white h-[120rem] transition-[width] ease-in-out duration-300 fixed top-0 left-0 z-20;
 }
 
 .collapsed {
