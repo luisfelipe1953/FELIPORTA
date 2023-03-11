@@ -3,7 +3,7 @@
 
 <template>
   <div id="me" class="sm:container container-md mx-auto mt-64">
-    <div class="ml-12 sm:ml-0  text-white sm:text-center">
+    <div class="ml-10 sm:ml-0  text-white sm:text-center">
       <h1 class="font-bold text-center text-3xl my-10">Sobre Mi / About Me</h1>
       <p>
         ¡Hola! Soy Luis Felipe Fernandez Betancur, un apasionado de la programación con 18 años de edad. Desde que tenía 16 años, he estado 

@@ -9,9 +9,9 @@ import { ref } from "vue";
     <div class="bg-gradient-to-r from-grayDark sm:min-h-[1000px] m-h-[1200px] absolute top-0 left-0 w-full -z-20"></div>
 
     <div class="clamp z-20 absolute sm:top-1/3 top-1/3 sm:left-1/2 left-60 transform -translate-x-1/2 -translate-y-1/2 overflow-hidden text-white font-bold ">
-      <div class="contenedor font-bold overflow-hidden sm:h-20 h-10 sm:px-20 relative">
+      <div class="contenedor font-bold overflow-hidden sm:h-20 h-8 sm:px-20 relative">
         <p class="inline-block float-left">Welcome</p>
-        <ul class="list sm:ml-[400px] ml-40 text-left">
+        <ul class="list sm:ml-[400px] ml-32 text-left">
           <li class="item">world !</li>
           <li class="item">bob !</li>
           <li class="item">users !</li>
@@ -44,7 +44,7 @@ import { ref } from "vue";
 }
 
 .clamp {
-    font-size: clamp(20px, -0.8px + 8vw, 60px);
+    font-size: clamp(20px, -5px + 8vw, 60px);
 }
 
 .list {

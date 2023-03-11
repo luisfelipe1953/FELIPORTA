@@ -3,7 +3,7 @@
 
 <template>
   <div class="fondo ">
-    <div class="cat mt-20">
+    <div class="cat sm:ml-0 ml-10 mt-20">
       <div class="ear ear--left"></div>
       <div class="ear ear--right"></div>
       <div class="face">
@@ -22,8 +22,7 @@
 <style scoped>
 .cat {
   position: relative;
-  height: 170px;
-  width: 170px;
+  @apply sm:w-[170px] sm:h-[170px] w-32 h-32
 }
 
 .ear {

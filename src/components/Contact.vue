@@ -3,10 +3,10 @@
 
 <template>
   <div id="contact">
-    <h1 class="font-bold text-center text-white sm:text-3xl text-2xl mt-40">Contacto / Contact</h1>
+    <h1 class="font-bold text-center text-white sm:text-3xl sm:ml-0 ml-10 text-2xl mt-40">Contacto / Contact</h1>
     <div class="mb-60">
-      <ul class="flex justify-center sm:gap-10 gap-3 sm:mt-[1600px] mt-[200rem]">
-        <li >
+      <ul class="grid grid-cols-3  gap-10  sm:mt-[1600px]">
+        <li>
           <a class="redondo" target="_blank" href="https://github.com/luisfelipe1953">
             <font-awesome-icon icon="fa-brands fa-github" size="4x" />
           </a>
@@ -29,7 +29,7 @@
 <style scoped>
 ul {
   transform: translate(-50%, -50%);
-  @apply flex absolute top-full left-1/2;
+  @apply absolute left-1/2 mt-20;
 }
 
 

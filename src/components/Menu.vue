@@ -17,14 +17,14 @@ components: {
   <div>
     <div :class="['menu', collapsed ? 'collapsed' : 'expanded']">
       <div class="flex justify-end">
-        <button class="p-3 mr-3" @click="collapsed = !collapsed">
+        <button class="p-3 mr-0 sm:mr-3" @click="collapsed = !collapsed">
           <font-awesome-icon icon="fa-solid fa-bars" size="2x" />
         </button>
       </div>
 
       <div class="p-3 text-center">
         <img
-          class="rounded-full min-w-[50px] max-w-[200px] w-full mx-auto"
+          class="rounded-full sm:min-w-[50px] min-w-[40px] max-w-[200px] w-full mx-auto"
           :src="'img/' + menuItems.profile.image"
           alt=""
         />
@@ -49,10 +49,10 @@ components: {
 }
 
 .collapsed {
-  @apply w-[80px];
+  @apply sm:w-[80px] w-[60px];; 
 }
 
 .expanded {
-  @apply w-[350px];
+  @apply sm:w-[350px] w-[200px];
 }
 </style>
