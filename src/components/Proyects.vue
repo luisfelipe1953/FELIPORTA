@@ -1,10 +1,14 @@
 <script setup>
 import proyectsItems from "./proyectsItems";
+import Preview from "./Preview.vue";
 </script>
 
 <template>
   <div id="proyects">
     <h1 class="font-bold text-white text-center sm:text-3xl text-2xl mt-40">Proyectos / proyects</h1>
+    <div>
+      <Preview />
+    </div>
     <div class="sm:container container-md mx-auto grid sm:grid-cols-3 grid-cols-1 gap-5 mt-20">
       <div
         class="shadow-hover ml-12 sm:m-0 mt-10 justify-self-center"
@@ -15,13 +19,17 @@ import proyectsItems from "./proyectsItems";
         <p class="m-10 sm:text-base text-[10px]">
           {{ proyectsItem.text }}
         </p>
-        <a class="p-10" target="_blank" :href="proyectsItem.url">
+        <a class="p-10" target="_blank" rel="noopener noreferrer" :href="proyectsItem.url">
           <font-awesome-icon
-            class="absolute top-3/4 sm:left-36 left-[105px] transition-transform hover:scale-110 ease-in-out"
+            class="absolute top-3/4 sm:left-28 left-[75px] transition-transform hover:scale-110 hover:text-purple ease-in-out"
             icon="fa-brands fa-github"
             size="3x"
           />
         </a>
+         <a class="p-10" target="_blank" rel="noopener noreferrer" :href="proyectsItem.urlSitio">
+            <font-awesome-icon class="absolute top-3/4 sm:left-48 left-[130px] transition-transform hover:scale-110 hover:text-purple ease-in-out"
+          icon="fa-solid fa-up-right-from-square" size="3x"/>
+          </a>
       </div>
     </div>
   </div>
