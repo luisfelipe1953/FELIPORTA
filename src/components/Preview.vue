@@ -108,7 +108,7 @@ export default {
           }"
         >
           <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
-            <img class="rounded-xl" :src="'/img/' + imagenes.imagenesId" />
+            <img class="rounded-xl" :src="'./src/assets/img/' + imagenes.imagenesId" />
           </swiper-slide>
         </swiper>
       </div>
@@ -130,7 +130,7 @@ export default {
           }"
         >
           <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
-            <img class="rounded-xl" :src="'/img/' + imagenes.imagenesId" />
+            <img class="rounded-xl" :src="'./src/assets/img/' + imagenes.imagenesId" />
           </swiper-slide>
         </swiper>
       </div>
