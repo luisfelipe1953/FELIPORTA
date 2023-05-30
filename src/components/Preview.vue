@@ -70,10 +70,86 @@ export default {
         ],
       },
     ]);
+
+    const PharmacerSwp = ref([
+      {
+        name: "Pharmacer",
+        image: [
+          {
+            id: 0,
+            imagenesId: "pharmacer1.png",
+          },
+          {
+            id: 1,
+            imagenesId: "pharmacer2.png",
+          },
+          {
+            id: 2,
+            imagenesId: "pharmacer3.png",
+          },
+        ],
+      },
+    ]);
+
+    const TeamBoardSwp = ref([
+      {
+        name: "TeamBoard",
+        image: [
+          {
+            id: 0,
+            imagenesId: "teamboard1.png",
+          },
+          {
+            id: 1,
+            imagenesId: "teamboard2.png",
+          },
+          {
+            id: 3,
+            imagenesId: "teamboard3.png",
+          },
+          {
+            id: 4,
+            imagenesId: "teamboard4.png",
+          },
+          {
+            id: 4,
+            imagenesId: "teamboard5.png",
+          },
+        ],
+      },
+    ]);
+
+    const NotificationSwp = ref([
+      {
+        name: "Notification",
+        image: [
+          {
+            id: 0,
+            imagenesId: "notification1.png",
+          },
+          {
+            id: 1,
+            imagenesId: "notification2.png",
+          },
+          {
+            id: 3,
+            imagenesId: "notification3.png",
+          },
+          {
+            id: 4,
+            imagenesId: "notification4.png",
+          },
+        ],
+      },
+    ]);
+
     return {
       modules: [Pagination, Autoplay, EffectCards],
       VirtualMeetSwp,
       JeanCellSwp,
+      PharmacerSwp,
+      TeamBoardSwp,
+      NotificationSwp
     };
   },
 };
@@ -108,7 +184,7 @@ export default {
           }"
         >
           <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
-            <img class="rounded-xl" :src="'./src/assets/img/' + imagenes.imagenesId" />
+            <img class="rounded-xl" :src="'./img/' + imagenes.imagenesId" />
           </swiper-slide>
         </swiper>
       </div>
@@ -130,7 +206,73 @@ export default {
           }"
         >
           <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
-            <img class="rounded-xl" :src="'./src/assets/img/' + imagenes.imagenesId" />
+            <img class="rounded-xl" :src="'./img/' + imagenes.imagenesId" />
+          </swiper-slide>
+        </swiper>
+      </div>
+      <div v-for="item in PharmacerSwp" :key="item.name" class="sm:w-full w-64">
+        <h2
+          class="font-bold text-white text-center sm:text-3xl text-2xl mt-20 mb-5"
+        >
+          {{ item.name }}
+        </h2>
+        <swiper
+          :modules="modules"
+          :loop="true"
+          :effect="funcionMobile()"
+          :pagination="false"
+          :autoplay="{
+            delay: 7000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }"
+        >
+          <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
+            <img class="rounded-xl" :src="'./img/' + imagenes.imagenesId" />
+          </swiper-slide>
+        </swiper>
+      </div>
+      <div v-for="item in TeamBoardSwp" :key="item.name" class="sm:w-full w-64">
+        <h2
+          class="font-bold text-white text-center sm:text-3xl text-2xl mt-20 mb-5"
+        >
+          {{ item.name }}
+        </h2>
+        <swiper
+          :modules="modules"
+          :loop="true"
+          :effect="funcionMobile()"
+          :pagination="false"
+          :autoplay="{
+            delay: 7000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }"
+        >
+          <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
+            <img class="rounded-xl" :src="'./img/' + imagenes.imagenesId" />
+          </swiper-slide>
+        </swiper>
+      </div>
+      <div v-for="item in NotificationSwp" :key="item.name" class="sm:w-full w-64">
+        <h2
+          class="font-bold text-white text-center sm:text-3xl text-2xl mt-20 mb-5"
+        >
+          {{ item.name }}
+        </h2>
+        <swiper
+          :modules="modules"
+          :loop="true"
+          :effect="funcionMobile()"
+          :pagination="false"
+          :autoplay="{
+            delay: 7000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }"
+        >
+          <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
+            <img class="rounded-xl" :src="'./img/' + imagenes.imagenesId" />
           </swiper-slide>
         </swiper>
       </div>
