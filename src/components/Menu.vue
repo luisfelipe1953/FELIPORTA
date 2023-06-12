@@ -4,7 +4,7 @@ import menuItems from "./menuItems.js";
 import MenuItem from "./MenuItem.vue";
 
 
-const collapsed = ref(false);
+const collapsed = ref(true);
 
 components: {
   MenuItem,

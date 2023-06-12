@@ -5,31 +5,53 @@ import Preview from "./Preview.vue";
 
 <template>
   <div id="proyects">
-    <h1 class="font-bold text-white text-center sm:text-3xl text-2xl mt-40">Proyectos / proyects</h1>
+    <h1 class="font-bold text-white text-center sm:text-3xl text-2xl mt-40">
+      Proyectos / proyects
+    </h1>
     <div>
       <Preview />
     </div>
-    <div class="sm:container container-md mx-auto grid sm:grid-cols-3 grid-cols-1 gap-5 mt-20">
+    <div
+      class="sm:container container-md mx-auto grid sm:grid-cols-3 grid-cols-1 gap-5 mt-20"
+    >
       <div
         class="shadow-hover ml-12 sm:m-0 mt-10 justify-self-center"
         v-for="proyectsItem in proyectsItems.proyects"
         :key="proyectsItem.id"
       >
-        <h1 class="m-10  sm:text-base  text-[10px]">{{ proyectsItem.title }}</h1>
+        <h1 class="m-10 sm:text-base text-[10px]">{{ proyectsItem.title }}</h1>
         <p class="m-10 sm:text-base text-[10px]">
           {{ proyectsItem.text }}
         </p>
-        <a class="p-10" target="_blank" rel="noopener noreferrer" :href="proyectsItem.url">
-          <font-awesome-icon
+        <a
+          class=""
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="proyectsItem.url"
+        >
+          <span
             class="absolute top-3/4 sm:left-28 left-[75px] transition-transform hover:scale-110 hover:text-purple ease-in-out"
-            icon="fa-brands fa-github"
-            size="3x"
-          />
+          >
+            <font-awesome-icon icon="fa-brands fa-github" size="3x" />
+          </span>
         </a>
-         <a class="p-10" target="_blank" rel="noopener noreferrer" :href="proyectsItem.urlSitio">
-            <font-awesome-icon class="absolute top-3/4 sm:left-48 left-[130px] transition-transform hover:scale-110 hover:text-purple ease-in-out"
-          icon="fa-solid fa-up-right-from-square" size="3x"/>
-          </a>
+
+        <a
+          v-if="proyectsItem.urlSitio"
+          class=""
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="proyectsItem.urlSitio"
+        >
+          <span
+            class="absolute top-3/4 sm:left-48 left-[130px] transition-transform hover:scale-110 hover:text-purple ease-in-out"
+          >
+            <font-awesome-icon
+              icon="fa-solid fa-up-right-from-square"
+              size="3x"
+            />
+          </span>
+        </a>
       </div>
     </div>
   </div>

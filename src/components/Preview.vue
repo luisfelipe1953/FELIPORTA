@@ -143,13 +143,75 @@ export default {
       },
     ]);
 
+    const MercadoCountrySwp = ref([
+      {
+        name: "MercadoCountry",
+        image: [
+          {
+            id: 0,
+            imagenesId: "mercadocountry1.png",
+          },
+          {
+            id: 1,
+            imagenesId: "mercadocountry2.png",
+          },
+          {
+            id: 3,
+            imagenesId: "mercadocountry3.png",
+          },
+          {
+            id: 4,
+            imagenesId: "mercadocountry4.png",
+          },
+          {
+            id: 5,
+            imagenesId: "mercadocountry5.png",
+          },
+        ],
+      },
+    ]);
+
+    const PostSwp = ref([
+      {
+        name: "Post",
+        image: [
+          {
+            id: 0,
+            imagenesId: "post1.png",
+          },
+          {
+            id: 1,
+            imagenesId: "post2.png",
+          },
+          {
+            id: 3,
+            imagenesId: "post3.png",
+          },
+          {
+            id: 4,
+            imagenesId: "post4.png",
+          },
+          {
+            id: 5,
+            imagenesId: "post5.png",
+          },
+          {
+            id: 6,
+            imagenesId: "post6.png",
+          },
+        ],
+      },
+    ]);
+
     return {
       modules: [Pagination, Autoplay, EffectCards],
       VirtualMeetSwp,
       JeanCellSwp,
       PharmacerSwp,
       TeamBoardSwp,
-      NotificationSwp
+      NotificationSwp,
+      MercadoCountrySwp,
+      PostSwp
     };
   },
 };
@@ -255,6 +317,50 @@ export default {
         </swiper>
       </div>
       <div v-for="item in NotificationSwp" :key="item.name" class="sm:w-full w-64">
+        <h2
+          class="font-bold text-white text-center sm:text-3xl text-2xl mt-20 mb-5"
+        >
+          {{ item.name }}
+        </h2>
+        <swiper
+          :modules="modules"
+          :loop="true"
+          :effect="funcionMobile()"
+          :pagination="false"
+          :autoplay="{
+            delay: 7000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }"
+        >
+          <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
+            <img class="rounded-xl" :src="'./img/' + imagenes.imagenesId" />
+          </swiper-slide>
+        </swiper>
+      </div>
+      <div v-for="item in MercadoCountrySwp" :key="item.name" class="sm:w-full w-64">
+        <h2
+          class="font-bold text-white text-center sm:text-3xl text-2xl mt-20 mb-5"
+        >
+          {{ item.name }}
+        </h2>
+        <swiper
+          :modules="modules"
+          :loop="true"
+          :effect="funcionMobile()"
+          :pagination="false"
+          :autoplay="{
+            delay: 7000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }"
+        >
+          <swiper-slide v-for="imagenes in item.image" :key="imagenes.id">
+            <img class="rounded-xl" :src="'./img/' + imagenes.imagenesId" />
+          </swiper-slide>
+        </swiper>
+      </div>
+      <div v-for="item in PostSwp" :key="item.name" class="sm:w-full w-64">
         <h2
           class="font-bold text-white text-center sm:text-3xl text-2xl mt-20 mb-5"
         >
