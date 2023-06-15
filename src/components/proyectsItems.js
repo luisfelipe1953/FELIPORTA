@@ -17,35 +17,35 @@ export default {
     {
       id: 2,
       title: "Pharmacer",
-      text: "Es un mapa donde puedes buscar la farmacias mas sercanas a tu ubicacion tambien puedes ver donde estan ubicadas cada una de las farmacias de forma clara, hecho en arquitectura hexagonal",
+      text: "Es un mapa que te permite buscar las farmacias más cercanas a tu ubicación. Además, muestra de manera clara la ubicación de cada una de las farmacias. Este proyecto ha sido desarrollado utilizando la arquitectura hexagonal.",
       url: "https://github.com/luisfelipe1953/farmacia-api-arquitectura-hexagonal",
       urlSitio: "https://luisfelipe1953.github.io/Pharmacer-front/"
     },
     {
       id: 3,
       title: "TeamBoard",
-      text: "Es un sistema de gestion y calificacion, este proyecto fue hecho para la empresa nocountry, trabaje con equipo en una simulacion el cual yo me encargue del back",
+      text: "Es un sistema de gestión y calificación desarrollado para la empresa Nocountry. Trabajé en equipo en una simulación, siendo responsable del desarrollo del backend.",
       url: "https://github.com/luisfelipe1953/TeamBoard",
       // urlSitio: "null"
     },
     {
       id: 4,
       title: "Notifications",
-      text: "Es un proyecto personal, para demostar mis habilidades, ya que tiene varias funcionalidades como notificaciones, eventos, y un seccion para exportar y crear productos en ecxel o pdf",
+      text: "Es un proyecto personal diseñado para demostrar mis habilidades, ya que cuenta con varias funcionalidades, como notificaciones, eventos y una sección para exportar y crear productos en Excel o PDF",
       url: "https://github.com/luisfelipe1953/notifications-and-other-functionalities",
       // urlSitio: ""
     },
     {
       id: 5,
       title: "MercadoCountry",
-      text: "Es una replica de mercadolibre, trabaje con equipo en una simulacion el cual yo me encargue del back",
+      text: "Es una réplica de MercadoLibre en la que trabajé en equipo en una simulación, siendo responsable del desarrollo del backend.",
       url: "https://github.com/No-Country/s8-05-php-mercadolibre",
       urlSitio: "https://mercado-country.vercel.app/"
     },
     {
       id: 6,
       title: "Posts",
-      text: "Es una periodico de noticias donde puede pueblicar y ver los posts que te parezcan mas interesante, puedes ver en el github las credenciales de administracion",
+      text: "Es un periódico de noticias donde puedes publicar y ver los posts que te parezcan más interesantes. Puedes encontrar las credenciales de administración en GitHub",
       url: "https://github.com/luisfelipe1953/post-laravel-ddd",
       urlSitio: "https://posts-app-uhmn4.ondigitalocean.app/"
     },
