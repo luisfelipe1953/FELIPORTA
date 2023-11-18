@@ -12,11 +12,11 @@
         <img src="../assets/img/php.png" alt="js" />
         <img src="../assets/img/sass.png" alt="sass" />
         <img src="../assets/img/laravel.png" alt="laravel" />
-        <img class="w-[96px] h-[96px]" src="../assets/img/blade.svg" alt="blade" />
+        <img class="w-[96px] h-[96px]" src="../assets/img/node.png" alt="blade" />
         <img src="../assets/img/sql.png" alt="sql" />
         <img class="w-[96px]" src="../assets/img/mysql.svg" alt="mysql" />
         <img class="w-[96px]" src="../assets/img/tailwind.svg" alt="tailwind" />
-        <img class="w-[96px]" src="../assets/img/vite.svg" alt="vite" />
+        <img class="w-[96px]" src="../assets/img/docker.png" alt="vite" />
         <img class="w-[96px]" src="../assets/img/vue.svg" alt="vue" />
       </div>
     </div>
